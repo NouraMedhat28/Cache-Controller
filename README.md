@@ -16,7 +16,7 @@
 - #### 𝑖 is the cache line number
 - #### 𝑗 is the main memory block number
 - #### 𝑚 is the number of lines in the cache
-![image](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/a3836385-f7db-4d96-a15d-3e0bf2df85a6)
+![img006](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/85806d72-58be-485b-9c4f-d09e2726425b)
 ## 3. Cache Controller with Write-Through and Write-Around Policies
 #### In this project, we will work on implementing a simple caching system for the RISC-V processor. For simplicity, we will integrate the caching system with the single-cycle implementation. Additionally, we assume the following:
 - #### Only data memory will be cached. The instruction memory will not be affected.
@@ -29,10 +29,10 @@
 
 ### 3.1 Cache Design
 #### In this project, the cache is required to be 512B, and each word is 4B. So, in total we have 128 words, and therefore we need a 7 bit address to access any word in the cache. The line in the cache consists of 16 bytes, 4 words, which means that we have 32 lines in the cache. The lines in it can be illustrated as follows:
-![Cache internal drawio](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/b3698f6c-0c04-4206-afa2-951c7ae37edc)
+![Cache internal drawio](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/28021de9-aaca-4c92-a8e2-546851d0a2eb)
 ### 3.2 Data Memory Design
 #### The data memory is required to be 4KB, and each word is 4B. So, in total we have 1024 words, and therefore we need a 10 bit address to access any word in the data memory. This means we have 256 blocks in the data memory.
-![Data Memory Internal drawio](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/7c4cddf6-4165-4027-a280-4991902cb2e7)
+![Data Memory Internal drawio](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/cf6336cb-4b09-4cae-ab7b-3a8d7136f1c2)
 ### 3.3 Physical Address
 #### As explained, the cache requires only a 7 bit address and the data memory requires a 10 bit address. So, how to map this physical address into a logical one?
 - #### First, each block in the data memory, or each line in the cache memory, consists of 4 words. So, to determine which word we want to access, we need 2 bits.
