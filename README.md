@@ -4,9 +4,9 @@
 #### Cache memory is important because it improves the efficiency of data retrieval. It stores program instructions and data that are used repeatedly in the operation of programs or information that the CPU is likely to need next. The computer processor can access this information more quickly from the cache than from the main memory. Fast access to these instructions increases the overall speed of the program.
 ## 1.3 How the processor interacts with the cache memory
 #### When the processor needs to read or write a location in the main memory, it first checks for a corresponding entry in the cache.
-- #### If the processor finds that the memory location is in the cache, a Cache Hit has occurred and data is read from the cache.
-- #### If the processor does not find the memory location in the cache, a cache miss has occurred. For a cache miss, the cache allocates a new entry and copies in data from the main memory, then the request is fulfilled from the contents of the cache.
-- #### The performance of cache memory is frequently measured in terms of a quantity called Hit ratio.
+- If the processor finds that the memory location is in the cache, a Cache Hit has occurred and data is read from the cache.
+- If the processor does not find the memory location in the cache, a cache miss has occurred. For a cache miss, the cache allocates a new entry and copies in data from the main memory, then the request is fulfilled from the contents of the cache.
+- The performance of cache memory is frequently measured in terms of a quantity called Hit ratio.
 ## 2. Cache Mapping
 #### There are 3 techniques for cache mapping: Direct Mapping, Associative Mapping, and Set Associative Mapping. I am going to cover the Direct Mapping technique only.
 ### 2.1 Direct Mapping
