@@ -107,7 +107,7 @@
 #### Notes:
 - #### The simulation was done on ModelSim
 - #### The full documentation is uploaded, too.
-- #### The block diagrams was drawn using draw.io
+- #### The block diagrams were drawn using draw.io
 
 
 
