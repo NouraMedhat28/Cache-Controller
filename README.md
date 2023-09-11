@@ -13,9 +13,9 @@
 #### The simplest technique, known as direct mapping, maps each block of main memory into only one possible cache line. or In Direct mapping, assign each memory block to a specific line in the cache. If a line is previously taken up by a memory block when a new block needs to be loaded, the old block is trashed. An address space is split into two parts: index field and a tag field. The cache is used to store the tag field whereas the rest is stored in the main memory. Direct mapping`s performance is directly proportional to the Hit ratio.
 #### 𝑖 = 𝑗 𝑚𝑜𝑑𝑢𝑙𝑜 𝑚
 #### Where:
-- #### 𝑖 is the cache line number
-- #### 𝑗 is the main memory block number
-- #### 𝑚 is the number of lines in the cache
+- 𝑖 is the cache line number
+-  𝑗 is the main memory block number
+- 𝑚 is the number of lines in the cache
 ![img006](https://github.com/NouraMedhat28/Cache-Controller/assets/96621514/85806d72-58be-485b-9c4f-d09e2726425b)
 ## 3. Cache Controller with Write-Through and Write-Around Policies
 #### In this project, we will work on implementing a simple caching system for the RISC-V processor. For simplicity, we will integrate the caching system with the single-cycle implementation. Additionally, we assume the following:
